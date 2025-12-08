@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "NoteNexus",
+  "version": "1.0",
+  "description": "A fast lightweight note-taking extension",
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "NoteNexus"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ]
+}

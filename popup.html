@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteNexus</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo" id = "logo">NoteNexus</div>
+        <div class="search-container">
+            <i class='bx bx-search search-icon'></i>
+            <input type="text" class="search-input" placeholder="Search">
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn"><i class='bx bx-moon'></i></button>
+            <button class="icon-btn"><i class='bx bx-cog'></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="folders-header">
+                <span class="folders-title">Folders</span>
+                <!-- <i class='bx bx-chevron-down dropdown-icon'></i> -->
+            </div>
+            
+            <!-- <div class="folder-list">
+                <div class="folder-item">
+                    <i class='bx bx-folder folder-icon'></i>
+                    <span>Folders</span>
+                </div>
+                <div class="folder-item">
+                    <i class='bx bx-folder folder-icon'></i>
+                    <span>School</span>
+                </div>
+                <div class="folder-item">
+                    <i class='bx bx-folder folder-icon'></i>
+                    <span>D&D</span>
+                </div>
+                <div class="folder-item">
+                    <i class='bx bx-folder folder-icon'></i>
+                    <span>Research</span>
+                </div>
+                <div class="folder-item">
+                    <i class='bx bx-folder folder-icon'></i>
+                    <span>Misc</span>
+                </div>
+            </div> -->
+
+            <div class="folder-item special-folder">
+                <i class='bx bx-star folder-icon'></i>
+                <span>Pinned</span>
+            </div>
+            <div class="folder-item special-folder">
+                <i class='bx bx-trash folder-icon'></i>
+                <span>Trash</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title">Pinned</h2>
+                <div class="notes-grid">
+                    <div class="note-card">
+                        <div class="note-header">
+                            <h3 class="note-title">Suspiccious Patterns</h3>
+                            <i class='bx bxs-star star-icon'></i>
+                        </div>
+                        <p class="note-description">Logged strange activity in Hawkins yesterday afternoon...</p>
+                        <p class="note-date">yesterday</p>
+                    </div>
+                    <div class="note-card">
+                        <div class="note-header">
+                            <h3 class="note-title">Library Research</h3>
+                            <i class='bx bxs-star star-icon'></i>
+                        </div>
+                        <p class="note-description">Findings on the history of the Creel House</p>
+                        <p class="note-date">Thursday</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">All Notes</h2>
+                <div class="notes-grid">
+                    <div class="note-card new-note-card" id="newNoteBtn">
+                        <div class="note-header">
+                            <h3 class="note-title">New Note</h3>
+                        </div>
+                        <p class="note-description">Type and save quick thoughts</p>
+                    </div>
+                    <div class="note-card">
+                        <div class="note-header">
+                            <h3 class="note-title">Vecna Encounter</h3>
+                        </div>
+                        <p class="note-description">Plan strategies and document the last meeting</p>
+                    </div>
+                    <div class="note-card">
+                        <div class="note-header">
+                            <h3 class="note-title">Top-Secret Evidence</h3>
+                        </div>
+                        <p class="note-description">A new screenshot with critical information</p>
+                    </div>
+                    <div class="note-card">
+                        <div class="note-header">
+                            <h3 class="note-title">Meeting Notes</h3>
+                        </div>
+                        <p class="note-description">Module discussion — follow up with Dustin</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- FAB Button to open editor -->
+    <button class="fab" id="fabBtn">
+        <i class='bx bx-plus'></i>
+    </button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
